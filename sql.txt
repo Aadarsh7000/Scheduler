@@ -1,0 +1,19 @@
+create table  user(
+ userId  int  unique primary key auto_increment,
+ userEmail  varchar(255) unique,
+ userName varchar(100),
+ userPassword varchar(50) 
+ 
+);
+create table assined_task(
+taskid int unique  primary key auto_increment,
+ task_title varchar(255) unique,
+description varchar(255),
+start_date  varchar(50),
+end_date varchar(50),
+ start_time varchar(50),
+end_time varchar(50),
+status  varchar(10),
+ priority varchar(20),
+ userEmail  varchar(255)
+);
